@@ -1,0 +1,3 @@
+Loading...
+
+![favstore](https://github.com/fatihoguuz/FavStore/assets/141723606/400e2691-884e-4a47-a35a-784895a09f35)
