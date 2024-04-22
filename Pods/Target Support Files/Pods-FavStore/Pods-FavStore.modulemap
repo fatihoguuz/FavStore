@@ -1,0 +1,6 @@
+framework module Pods_FavStore {
+  umbrella header "Pods-FavStore-umbrella.h"
+
+  export *
+  module * { export * }
+}

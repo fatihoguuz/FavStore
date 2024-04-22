@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D5839AA2BD65C8900F0C2D3 /* signUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5839A92BD65C8900F0C2D3 /* signUpViewController.swift */; };
 		3D85F59A2BD5514C00F362A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D85F5992BD5514C00F362A0 /* AppDelegate.swift */; };
 		3D85F59C2BD5514C00F362A0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D85F59B2BD5514C00F362A0 /* SceneDelegate.swift */; };
 		3D85F59E2BD5514C00F362A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D85F59D2BD5514C00F362A0 /* ViewController.swift */; };
 		3D85F5A12BD5514C00F362A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D85F59F2BD5514C00F362A0 /* Main.storyboard */; };
 		3D85F5A32BD5514E00F362A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D85F5A22BD5514E00F362A0 /* Assets.xcassets */; };
 		3D85F5A62BD5514E00F362A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D85F5A42BD5514E00F362A0 /* LaunchScreen.storyboard */; };
+		91FBC933ED32E299256909DB /* Pods_FavStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC5E62A7DBB5A0404FFCBD38 /* Pods_FavStore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		24799EDA21C2A38798C91DA7 /* Pods-FavStore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FavStore.release.xcconfig"; path = "Target Support Files/Pods-FavStore/Pods-FavStore.release.xcconfig"; sourceTree = "<group>"; };
+		3D5839A92BD65C8900F0C2D3 /* signUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUpViewController.swift; sourceTree = "<group>"; };
 		3D85F5962BD5514C00F362A0 /* FavStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FavStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D85F5992BD5514C00F362A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D85F59B2BD5514C00F362A0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		3D85F5A22BD5514E00F362A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D85F5A52BD5514E00F362A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D85F5A72BD5514E00F362A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC5E62A7DBB5A0404FFCBD38 /* Pods_FavStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FavStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B89F4FA76C9C6730409ACE0F /* Pods-FavStore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FavStore.debug.xcconfig"; path = "Target Support Files/Pods-FavStore/Pods-FavStore.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91FBC933ED32E299256909DB /* Pods_FavStore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				3D85F5982BD5514C00F362A0 /* FavStore */,
 				3D85F5972BD5514C00F362A0 /* Products */,
+				A3580996C077E87EBAE7DA22 /* Pods */,
+				EE415FBCCC8303762296F706 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +68,30 @@
 				3D85F5992BD5514C00F362A0 /* AppDelegate.swift */,
 				3D85F59B2BD5514C00F362A0 /* SceneDelegate.swift */,
 				3D85F59D2BD5514C00F362A0 /* ViewController.swift */,
+				3D5839A92BD65C8900F0C2D3 /* signUpViewController.swift */,
 				3D85F59F2BD5514C00F362A0 /* Main.storyboard */,
 				3D85F5A22BD5514E00F362A0 /* Assets.xcassets */,
 				3D85F5A42BD5514E00F362A0 /* LaunchScreen.storyboard */,
 				3D85F5A72BD5514E00F362A0 /* Info.plist */,
 			);
 			path = FavStore;
+			sourceTree = "<group>";
+		};
+		A3580996C077E87EBAE7DA22 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B89F4FA76C9C6730409ACE0F /* Pods-FavStore.debug.xcconfig */,
+				24799EDA21C2A38798C91DA7 /* Pods-FavStore.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EE415FBCCC8303762296F706 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC5E62A7DBB5A0404FFCBD38 /* Pods_FavStore.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3D85F5AA2BD5514E00F362A0 /* Build configuration list for PBXNativeTarget "FavStore" */;
 			buildPhases = (
+				DC6A2C085A194E973EF0B036 /* [CP] Check Pods Manifest.lock */,
 				3D85F5922BD5514C00F362A0 /* Sources */,
 				3D85F5932BD5514C00F362A0 /* Frameworks */,
 				3D85F5942BD5514C00F362A0 /* Resources */,
+				1BE051359724D3B8713F3330 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +162,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1BE051359724D3B8713F3330 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FavStore/Pods-FavStore-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FavStore/Pods-FavStore-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FavStore/Pods-FavStore-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC6A2C085A194E973EF0B036 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FavStore-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3D85F5922BD5514C00F362A0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,6 +211,7 @@
 			files = (
 				3D85F59E2BD5514C00F362A0 /* ViewController.swift in Sources */,
 				3D85F59A2BD5514C00F362A0 /* AppDelegate.swift in Sources */,
+				3D5839AA2BD65C8900F0C2D3 /* signUpViewController.swift in Sources */,
 				3D85F59C2BD5514C00F362A0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -203,7 +275,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -266,7 +338,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -287,6 +359,7 @@
 		};
 		3D85F5AB2BD5514E00F362A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B89F4FA76C9C6730409ACE0F /* Pods-FavStore.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -314,6 +387,7 @@
 		};
 		3D85F5AC2BD5514E00F362A0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24799EDA21C2A38798C91DA7 /* Pods-FavStore.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
