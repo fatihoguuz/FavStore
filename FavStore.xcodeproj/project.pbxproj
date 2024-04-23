@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D02E1BE2BD7AD1B00D9CA62 /* userData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D02E1BD2BD7AD1B00D9CA62 /* userData.swift */; };
 		3D5839AA2BD65C8900F0C2D3 /* signUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5839A92BD65C8900F0C2D3 /* signUpViewController.swift */; };
 		3D85F59A2BD5514C00F362A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D85F5992BD5514C00F362A0 /* AppDelegate.swift */; };
 		3D85F59C2BD5514C00F362A0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D85F59B2BD5514C00F362A0 /* SceneDelegate.swift */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		24799EDA21C2A38798C91DA7 /* Pods-FavStore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FavStore.release.xcconfig"; path = "Target Support Files/Pods-FavStore/Pods-FavStore.release.xcconfig"; sourceTree = "<group>"; };
+		3D02E1BD2BD7AD1B00D9CA62 /* userData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userData.swift; sourceTree = "<group>"; };
 		3D5839A92BD65C8900F0C2D3 /* signUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUpViewController.swift; sourceTree = "<group>"; };
 		3D85F5962BD5514C00F362A0 /* FavStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FavStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D85F5992BD5514C00F362A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				3D85F59B2BD5514C00F362A0 /* SceneDelegate.swift */,
 				3D85F59D2BD5514C00F362A0 /* ViewController.swift */,
 				3D5839A92BD65C8900F0C2D3 /* signUpViewController.swift */,
+				3D02E1BD2BD7AD1B00D9CA62 /* userData.swift */,
 				3D85F59F2BD5514C00F362A0 /* Main.storyboard */,
 				3D85F5A22BD5514E00F362A0 /* Assets.xcassets */,
 				3D85F5A42BD5514E00F362A0 /* LaunchScreen.storyboard */,
@@ -212,6 +215,7 @@
 				3D85F59E2BD5514C00F362A0 /* ViewController.swift in Sources */,
 				3D85F59A2BD5514C00F362A0 /* AppDelegate.swift in Sources */,
 				3D5839AA2BD65C8900F0C2D3 /* signUpViewController.swift in Sources */,
+				3D02E1BE2BD7AD1B00D9CA62 /* userData.swift in Sources */,
 				3D85F59C2BD5514C00F362A0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

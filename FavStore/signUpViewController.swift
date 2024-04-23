@@ -11,8 +11,8 @@ import Parse
 class signUpViewController: UIViewController {
     
     @IBOutlet weak var emailTextView: UITextField!
-    @IBOutlet weak var usernameTextV: UITextField!
-    @IBOutlet weak var passwordTextV: UITextField!
+    @IBOutlet weak var usernameText: UITextField!
+    @IBOutlet weak var passwordText: UITextField!
     
     override func viewDidLoad() {
         
@@ -23,17 +23,19 @@ class signUpViewController: UIViewController {
     
     @IBAction func signUpButton(_ sender: Any) {
         
-        if usernameTextV.text != "" && passwordTextV.text != "" {
+        if usernameText.text != "" && passwordText.text != "" {
             let user = PFUser()
-            user.username = usernameTextV.text!
-            user.password = passwordTextV.text!
+            UserData.shared.userName = usernameText.text
+            UserData.shared.password = passwordText.text
+            user.username = usernameText.text!
+            user.password = passwordText.text!
             
             user.signUpInBackground { (success, error) in
                 if error != nil {
                     self.makeAlert(titleInput: "Error", messageInput: error?.localizedDescription ?? "ERROR!!")
                     
                 }else{
-                    
+                    self.performSegue(withIdentifier: "toViewController", sender: nil)
                 }
             }
             

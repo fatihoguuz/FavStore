@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Parse
 
 class ViewController: UIViewController {
 
@@ -19,6 +20,25 @@ class ViewController: UIViewController {
 
 
     @IBAction func logInClicked(_ sender: Any) {
+        
+        if userNameText.text != "" && passwordText.text != "" {
+            print("Success")
+            PFUser.logInWithUsername(inBackground: userNameText.text!, password: passwordText.text!) { (user , error) in
+                if error != nil {
+                    self.makeAlert(titleInput: "Error", messageInput: error?.localizedDescription ?? "ERROR!!!")
+                    
+                }else {
+                   
+                }
+
+            }
+            
+            
+        }else{
+            makeAlert(titleInput: "Error", messageInput: "Username / Password")
+        }
+        
+        
     }
     
     
@@ -26,5 +46,12 @@ class ViewController: UIViewController {
         performSegue(withIdentifier: "toLogUpVC", sender: nil)
     }
     
+    func makeAlert(titleInput: String , messageInput: String) {
+        let alert = UIAlertController(title: titleInput, message: messageInput, preferredStyle: UIAlertController.Style.alert)
+        let okBotton = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil)
+        alert.addAction(okBotton)
+        present(alert, animated: true, completion: nil)
+        
+    }
 }
 
