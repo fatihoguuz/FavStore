@@ -28,7 +28,7 @@ class ViewController: UIViewController {
                     self.makeAlert(titleInput: "Error", messageInput: error?.localizedDescription ?? "ERROR!!!")
                     
                 }else {
-                   
+                    self.performSegue(withIdentifier: "toMainMenu", sender: nil)
                 }
 
             }
@@ -43,7 +43,7 @@ class ViewController: UIViewController {
     
     
     @IBAction func logUpClicked(_ sender: Any) {
-        performSegue(withIdentifier: "toLogUpVC", sender: nil)
+        self.performSegue(withIdentifier: "toLogUpVC", sender: nil)
     }
     
     func makeAlert(titleInput: String , messageInput: String) {
