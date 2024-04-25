@@ -1,22 +1,33 @@
 //
-//  SignUpViewController.swift
+//  LogUpViewController.swift
 //  FavStore
 //
 //  Created by Fatih Oğuz on 24.04.2024.
 //
 
 import UIKit
+import Parse
 
 class SignUpViewController: UIViewController {
 
+    @IBOutlet weak var emailTextView: UITextField!
+    
+    @IBOutlet weak var usernameText: UITextField!
+    
+    @IBOutlet weak var passwordText: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
-    if usernameText.text != "" && passwordText.text != "" {
+    
+    
+    
+    
+    @IBAction func signUpButton(_ sender: Any) {
+        if usernameText.text != "" && passwordText.text != "" {
         let user = PFUser()
         UserData.shared.userName = usernameText.text
         UserData.shared.password = passwordText.text
@@ -31,8 +42,6 @@ class SignUpViewController: UIViewController {
                 self.performSegue(withIdentifier: "toViewController", sender: nil)
             }
         }
-        
-        
     }else {
         makeAlert(titleInput: "Error", messageInput: "Username / Password ?")
         
@@ -48,5 +57,4 @@ func makeAlert(titleInput: String , messageInput: String) {
     present(alert, animated: true, completion: nil)
     
 }
-
 }

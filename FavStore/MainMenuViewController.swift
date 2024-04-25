@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Parse
 
 class MainMenuViewController: UIViewController {
 
@@ -16,13 +17,33 @@ class MainMenuViewController: UIViewController {
         super.viewDidLoad()
 
         navigationController?.navigationBar.topItem?.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.add, target: self, action: #selector(addButtonClicked))
+        
+        navigationController?.navigationBar.topItem?.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.stop, target: self, action: #selector(logOutButtonClicked))
     }
     
 
     @objc func addButtonClicked() {
         
         
+    }
+    @objc func logOutButtonClicked(){
+    
+        PFUser.logOutInBackground { error in
+            if error != nil {
+                self.makeAlert(titleInput: "Error", messageInput: error?.localizedDescription ?? "ERROR!!!")
+                
+            }else{
+                self.performSegue(withIdentifier: "toSignInVC", sender: nil)
+            }
+        }
+        
         
     }
-
+    func makeAlert(titleInput: String , messageInput: String) {
+        let alert = UIAlertController(title: titleInput, message: messageInput, preferredStyle: UIAlertController.Style.alert)
+        let okBotton = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil)
+        alert.addAction(okBotton)
+        present(alert, animated: true, completion: nil)
+        
+    }
 }
