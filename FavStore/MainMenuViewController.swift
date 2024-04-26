@@ -23,7 +23,7 @@ class MainMenuViewController: UIViewController {
     
 
     @objc func addButtonClicked() {
-        
+        self.performSegue(withIdentifier: "next", sender: nil)
         
     }
     @objc func logOutButtonClicked(){
