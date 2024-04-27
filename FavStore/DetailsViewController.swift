@@ -7,6 +7,8 @@
 
 import UIKit
 import MapKit
+import Parse
+
 class DetailsViewController: UIViewController {
 
     @IBOutlet weak var detailsImageView: UIImageView!
@@ -14,11 +16,19 @@ class DetailsViewController: UIViewController {
     @IBOutlet weak var detailsTypeLabel: UILabel!
     @IBOutlet weak var detailsAtmosphereLabel: UILabel!
     @IBOutlet weak var detailsMapView: MKMapView!
-    
+    var chosenPlaceId = ""
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let query = PFQuery(className: "Places")
+        query.whereKey("objectId", equalTo: chosenPlaceId)
+        query.findObjectsInBackground { objects, error in
+            if error != nil {
+                
+            }else {
+                print(objects)
+            }
+        }
     }
     
 

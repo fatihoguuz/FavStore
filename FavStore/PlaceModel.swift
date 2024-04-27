@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import Parse
 
 class PlaceModel {
     
@@ -16,7 +17,10 @@ class PlaceModel {
     var placeType = ""
     var placeAtmosphere = ""
     var placeImage = UIImage()
+    var placeLatitude = ""
+    var placeLongitude = ""
     
     private init() {}
     
+  
 }

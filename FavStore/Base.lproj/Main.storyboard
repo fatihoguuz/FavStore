@@ -78,13 +78,13 @@
         <!--Main Menu View Controller-->
         <scene sceneID="iAo-Ri-qM4">
             <objects>
-                <viewController id="9Iw-1v-T6h" customClass="MainMenuViewController" customModule="FavStore" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="9Iw-1v-T6h" customClass="MainMenuViewController" customModule="FavStore" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bbj-wQ-BjX">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="HGH-Xd-dn7">
-                                <rect key="frame" x="0.0" y="44" width="393" height="808"/>
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
@@ -102,6 +102,7 @@
                         <outlet property="tableView" destination="HGH-Xd-dn7" id="cJ6-7e-iKF"/>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="toSignInVC" id="F1d-vT-0FH"/>
                         <segue destination="YUx-HH-RP9" kind="show" identifier="next" id="R7r-pr-r6E"/>
+                        <segue destination="OnB-e0-rI1" kind="show" identifier="toDetailsVC" id="h4d-au-cZi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i1N-JU-ra9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -192,7 +193,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="knb-qQ-orb">
-                                <rect key="frame" x="0.0" y="59" width="393" height="1441"/>
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="1500"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m7W-ij-vjT" userLabel="Content View">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="1500"/>
@@ -256,6 +257,7 @@
                             <constraint firstItem="knb-qQ-orb" firstAttribute="top" secondItem="9zc-Fd-f41" secondAttribute="top" id="wxJ-jb-x6W"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="9lH-XU-WPm"/>
                     <size key="freeformSize" width="393" height="1500"/>
                     <connections>
                         <outlet property="detailsAtmosphereLabel" destination="vth-07-yk4" id="zmv-42-jDe"/>
@@ -267,7 +269,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P86-Pn-1Hy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3058.7786259541986" y="983.80281690140851"/>
+            <point key="canvasLocation" x="2353" y="997"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="c3k-bh-t50">
@@ -294,6 +296,7 @@
                     <navigationItem key="navigationItem" id="n1i-3d-JwH"/>
                     <connections>
                         <outlet property="mapView" destination="Lnf-Hp-Lxu" id="xac-L8-mNX"/>
+                        <segue destination="9Iw-1v-T6h" kind="presentation" identifier="fromMapVCtoMainMenuVC" id="lVi-VS-WY4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cmr-8g-VLs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -395,6 +398,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="R7r-pr-r6E"/>
+        <segue reference="lVi-VS-WY4"/>
         <segue reference="F1d-vT-0FH"/>
     </inferredMetricsTieBreakers>
     <resources>
@@ -406,7 +411,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
