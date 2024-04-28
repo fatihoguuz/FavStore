@@ -11,21 +11,27 @@ import Parse
 class SignInViewController: UIViewController {
 
     @IBOutlet weak var userNameText: UITextField!
+    @IBOutlet weak var logInClicked: UIButton!
     @IBOutlet weak var passwordText: UITextField!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+
     }
 
 
     @IBAction func logInClicked(_ sender: Any) {
-        
         if userNameText.text != "" && passwordText.text != "" {
+
+            
             print("Success")
             PFUser.logInWithUsername(inBackground: userNameText.text!, password: passwordText.text!) { (user , error) in
                 if error != nil {
                     self.makeAlert(titleInput: "Error", messageInput: error?.localizedDescription ?? "ERROR!!!")
+                   
                     
                 }else {
                     self.performSegue(withIdentifier: "toMainMenu", sender: nil)
@@ -38,7 +44,7 @@ class SignInViewController: UIViewController {
             makeAlert(titleInput: "Error", messageInput: "Username / Password")
         }
         
-        
+
     }
     
     
@@ -53,5 +59,7 @@ class SignInViewController: UIViewController {
         present(alert, animated: true, completion: nil)
         
     }
+  
+
 }
 

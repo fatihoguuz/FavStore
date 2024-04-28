@@ -30,9 +30,12 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MJA-HX-tnC">
                                 <rect key="frame" x="40" y="623" width="312" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" systemColor="systemRedColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Sign In" cornerStyle="fixed"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Sign In" cornerStyle="fixed">
+                                    <color key="baseBackgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="logInClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pfO-jc-NIg"/>
                                 </connections>
@@ -59,7 +62,7 @@
                                     <attributedString key="attributedTitle">
                                         <fragment content="Sign Up">
                                             <attributes>
-                                                <font key="NSFont" size="15" name=".SFNS-Regular"/>
+                                                <font key="NSFont" metaFont="system" size="15"/>
                                                 <font key="NSOriginalFont" size="12" name="Helvetica"/>
                                             </attributes>
                                         </fragment>
@@ -74,6 +77,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
+                        <outlet property="logInClicked" destination="MJA-HX-tnC" id="6uq-oX-ynL"/>
                         <outlet property="passwordText" destination="uPj-p9-LFC" id="JrX-sS-PNF"/>
                         <outlet property="userNameText" destination="i26-4D-fVX" id="JMA-GM-lLA"/>
                         <segue destination="PtE-J0-Dji" kind="presentation" identifier="toMainMenu" id="mc1-vR-Plq"/>
