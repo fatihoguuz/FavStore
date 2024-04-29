@@ -1,3 +1,6 @@
-Loading...
+Hi everyone, my new app is FavStore out.
 
-![favstore](https://github.com/fatihoguuz/FavStore/assets/141723606/400e2691-884e-4a47-a35a-784895a09f35)
+Video
+ ↓↓↓
+![FavStore](https://github.com/fatihoguuz/FavStore/assets/141723606/871255ed-bf7f-482f-8e98-563cbd59d28d)
+
